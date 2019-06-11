@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+            <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+        <meta chareset="utf-8">
+        <title>WORDCOUNT</title>
+    </head>
+    
+
+<body>
+    <div class="container">
+  
+    <h1><strong>단어를 세드립니다!</strong><small>  아무 문장이나 입력해보세요.</small></h1><br>
+
+    <a href="{%url 'about'%}">ABOUT</a><br><br>
+    <div class="panel panel-info">
+        <div class="panel-heading">문장을 입력하세요.</div>
+        <div class="panel-body">
+            <form action="{%url 'result'%}">
+            <textarea cols="155", rows="10" name="fulltext"></textarea>
+        </div>
+    </div>
+   
+    <br>
+    <input type="submit" value="Count!" class="btn btn-primary">
+        
+    </form>
+    </div>
+</body>
